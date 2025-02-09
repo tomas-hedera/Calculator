@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Javascript</title>
+</head>
+
+<body>
+
+
+
+        <div class="kalkulacka" id="kalkulacka">
+                <button  class="close" onclick="zavriKalkulacku()" title="Zavřít">x</button>
+                <!-- Displej kalkulačky -->
+        <!--<h1>Kalkulačka</h1>-->
+                <input type="text" id="displej" readonly>
+
+
+                <!-- Tlačítka kalkulačky -->
+                <div class="tlacitka">
+                        <button onclick="vlozCislo(7)">7</button>
+                        <button onclick="vlozCislo(8)">8</button>
+                        <button onclick="vlozCislo(9)">9</button>
+                        <button onclick="vlozCislo('+')">+</button><br>
+
+                        <button onclick="vlozCislo(4)">4</button>
+                        <button onclick="vlozCislo(5)">5</button>
+                        <button onclick="vlozCislo(6)">6</button>
+                        <button onclick="vlozCislo('-')">-</button><br>
+
+                        <button onclick="vlozCislo(1)">1</button>
+                        <button onclick="vlozCislo(2)">2</button>
+                        <button onclick="vlozCislo(3)">3</button>
+                        <button onclick="vlozCislo('*')">*</button><br>
+
+                        <button onclick="vymazCislo('C')">C</button>
+                        <button onclick="vlozCislo(0)">0</button>
+                        <button onclick="vysledek('=')">=</button>
+                        <button onclick="vlozCislo('/')">/</button>
+
+
+                </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+        <script src="script.js"></script>
+     
+</body>
+
+</html>

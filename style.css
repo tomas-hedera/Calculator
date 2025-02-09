@@ -1,0 +1,123 @@
+/* Nastavení základního stylu pro tělo stránky */
+
+body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom, #000000, #ff2a00bc);
+        overflow: hidden;
+}
+/* Styl pro nadpis */
+
+h1 {
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        margin-bottom: 20px;
+}
+
+
+/* Styl pro kalkulačku */
+
+.kalkulacka {
+        position: absolute;
+        width: 400px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.353);
+        padding: 25px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transform:translateY(-100vh);
+        animation: slideUp 1s ease-out forwards;
+}
+/*sty pro zavreni kalkulacky*/
+.close
+{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 25px;
+        cursor: pointer;
+        background: none;
+        color: white;
+        border: none;
+}
+
+.close:hover
+{
+        color: red;
+}
+
+
+
+/* Styl pro displej kalkulačky */
+
+#displej {
+        width: 90%;
+        margin: 20px;
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        text-align: right;
+        font-size: 1.6em;
+}
+/*tlacitka  - Komplet*/
+.tlacitka {
+        text-align: center;
+        
+}
+
+/*Tlacitka - Separate*/
+.tlacitka button {
+    
+        padding: 22px;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px;
+        font-weight: bold;
+        font-size: 1.2em;
+        width: 70px;
+        transition: background-color 0.3s;
+        background-color: rgb(224, 224, 224);
+    
+}
+
+.tlacitka button:hover 
+{
+        background-color: rgb(255, 255, 255);
+}
+
+/*styl pro chybu*/
+.error
+{
+        color: red;
+        animation: blink 0.5s step-end  infinite alternate;
+
+}
+
+@keyframes blink{
+        50%
+        {
+                opacity: 0;
+        }
+}
+
+
+
+/* Klíčové snímky pro animaci posunu nahoru */
+
+@keyframes slideUp {
+        to {
+               transform:translateY(0)
+        }
+}
+
